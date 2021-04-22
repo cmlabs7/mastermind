@@ -155,9 +155,6 @@ def code_maker
         while i < 4
           if computerGuessCurr[i] == userCode[i]
             computerGuessNext[i] = computerGuessCurr[i]
-          #elsif 
-          #   computerGuessCurr.any? {|code| code == userCode[i] && computerGuessCurr[i] != userCode[i]}
-          #   computerGuessNext[i] = computerGuessCurr[i]
           else
             computerGuessNext[i] = codeArray[rand(0..5)]
           end
